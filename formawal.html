@@ -1,12 +1,66 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Form Login</title>
+	<title>Data Hobi </title>
 </head>
 <body>
-Login		:<input type="text" name="username">
-Password	:<input type="password" name="password">
-<input type="submit" name="login" value="Login">
+	<center> <h1> DATA HOBI </h1> </center>
+	<h3> Silahkan isi data-data di bawah ini!</h3>
+	<table>
+		<form method="POST" action="proses.php" enctype="multipart/form-data">
+
+			<tr>
+				<td> Nama </td>
+				<td> : </td>
+				<td> <input type="text" name="nama"> </td>
+			</tr>
+
+			<tr>
+				<td> Hobi </td>
+				<td> : </td>
+				<td> 
+					<input type="Checkbox" name="hobi[]" value="Gulat"> Gulat <br>
+					<input type="Checkbox" name="hobi[]" value="Pencak Silat"> Pencak Silat <br>
+					<input type="Checkbox" name="hobi[]" value="Membaca"> Membaca
+				</td>
+			</tr>
+
+			<tr>
+				<td> Foto </td>
+				<td> : </td>
+				<td> <input type="file" name="foto"></td>
+			</tr>
+
+			<tr>
+				<td> Genre Film Favorit </td>
+				<td> : </td>
+				<td>
+					<input type="checkbox" name="genre_film[]" value="Action"> Action <br>
+					<input type="checkbox" name="genre_film[]" value="Comedy"> Comedy <br>
+					<input type="checkbox" name="genre_film[]" value="Romance"> Romance <br>
+					<input type="checkbox" name="genre_film[]" value="Horror"> Horror <br>
+					<input type="checkbox" name="genre_film[]" value="Thriller"> Thriller </td>
+			</tr>
+
+			<tr>
+				<td> Tujuan Travelling </td>
+				<td> : </td>
+				<td>
+					<input type="checkbox" name="travelling[]" value="Bali"> Bali <br>
+					<input type="checkbox" name="travelling[]" value="Raja Ampat"> Raja Ampat <br>
+					<input type="checkbox" name="travelling[]" value="Pulau Derawan"> Pulau Derawan <br>
+					<input type="checkbox" name="travelling[]" value="Bangka Belitung"> Bangka Belitung <br>
+					<input type="checkbox" name="travelling[]" value="Labuan Bajo"> Labuan Bajo
+				</td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> <input type="submit" name="simpan" value="SIMPAN"></td>
+			</tr>
+		</form>
+	</table>
 
 </body>
 </html>
